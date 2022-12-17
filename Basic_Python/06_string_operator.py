@@ -5,9 +5,14 @@ print("fir" in str)
 
 #String Replacement.
 
-age = 24
+age = 11
 print("The age is " ,age,".")
 
+if age <= 18:
+    print("You are a teenager.")
+
+else:
+    print("Your are an adult.")
 #String Formatting.
 print("The age is {0}.".format(age))
 print("Just testing multiple formatting: {0}, {1}, {2}, {3}, {4}, {5}, and {6}.".format("Sun","Mon","Tue","Wed","Thu","Fri","Sat"))
