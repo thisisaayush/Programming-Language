@@ -1,4 +1,4 @@
-def my_solution():
+def containsDuplicate():
     array = [1,2,3,4,5,6,7,5]
 
     for i in range(len(array)):
@@ -8,4 +8,4 @@ def my_solution():
 
     return False
 
-print(my_solution())
+print(containsDuplicate())

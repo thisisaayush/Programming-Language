@@ -1,6 +1,6 @@
 import collections
 
-def my_solutions(array: list[str]) -> list[list[str]]:
+def groupAnagram(array: list[str]) -> list[list[str]]:
     default_list = collections.defaultdict(list)
 
     for str in array:
@@ -13,4 +13,4 @@ def my_solutions(array: list[str]) -> list[list[str]]:
     return default_list.values()
 
 array = ['tea','eat','naru','nuar','tachii','sasuke']
-print(my_solutions(array))
+print(groupAnagram(array))
