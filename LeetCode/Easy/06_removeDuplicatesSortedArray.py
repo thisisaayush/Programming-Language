@@ -1,4 +1,4 @@
-def removeDuplicates(nums: list):
+def removeSortedDuplicates(nums):
     l = 1
 
     for r in range(1, len(nums)):
@@ -6,4 +6,6 @@ def removeDuplicates(nums: list):
             nums[l] = nums[r]
             l += 1
 
-    return l 
+    return nums
+
+print(removeDuplicates([0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9]))
