@@ -17,7 +17,7 @@ class Linkedlist:
     def isEmpty(self):
         return self._size == 0
     
-    def addFirst(self, e):
+    def addFirst(self, e): # e is the value to be added to end node.
         new_element = _Node(e, None)
 
         if self.isEmpty():
@@ -30,7 +30,7 @@ class Linkedlist:
         
         self._size += 1
     
-    def addLast(self, e): # e is the value to be added to end node.
+    def addLast(self, e):
         new_element = _Node(e, None)
 
         if self.isEmpty():
@@ -42,12 +42,12 @@ class Linkedlist:
         self._tail = new_element
         self._size += 1
 
-    def addAny(self, e, index):
+    def addAny(self, e, position):
         new_element = _Node(e, None)
         p = self._head
         i = 1 
 
-        while i < index - 1:
+        while i < position - 1:
             p = p._next
             i += 1
 

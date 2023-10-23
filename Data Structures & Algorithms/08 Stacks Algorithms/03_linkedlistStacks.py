@@ -16,7 +16,8 @@ class StacksLinkedlist:
     
     def isEmpty(self):
         return self._size == 0
-    
+
+    # addLast() function of linkedlist class.
     def push(self, e): # e is the value to be pushed.
         new_element = _Node(e, None)
 
