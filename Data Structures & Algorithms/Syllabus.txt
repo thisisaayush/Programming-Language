@@ -1,8 +1,20 @@
-Section 5: Searching Algorithms.
+Section 03: Analysis of Algorithms.
+         i. Time Complexity.
+        ii. Space Complexity.
+
+Section 04: Recursion Algorithms.
+         i. Recursive Function.
+        ii. Recursive Function Time Complexity.
+
+Section 05: Searching Algorithms.
         i. Linear Search Algorithm.
        ii. Binary Search Algorithm.
 
-Section 6: Sorting Algorithms.
+Section 06: Sorting Algorithms.
+         i. Bubble Sort
+        ii. Merge Sort
+       iii. Quick Sort
+
     Comparison Based Sort:-
         i. Selection Sort.
        ii. Insertion Sort.
