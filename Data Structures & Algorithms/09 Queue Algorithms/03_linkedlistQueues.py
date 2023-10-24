@@ -18,7 +18,7 @@ class QueueLinkedlist:
     def isEmpty(self):
         return self._size == 0
     
-    def first(self, e):
+    def enqueue(self, e):
         new_element = _Node(e, None)
 
         if self.isEmpty():
