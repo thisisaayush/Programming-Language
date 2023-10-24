@@ -19,7 +19,7 @@ class QueuesArray:
         else: 
             return self._data.pop(0)
         
-    def firs(self):
+    def first(self):
         if self.isEmpty():
             print("Queue is empty!")
             return
