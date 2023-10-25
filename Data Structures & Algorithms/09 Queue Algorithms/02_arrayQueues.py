@@ -1,4 +1,4 @@
-class QueuesArray:
+class ArrayQueues:
     def __init__(self):
         self._data = []
     

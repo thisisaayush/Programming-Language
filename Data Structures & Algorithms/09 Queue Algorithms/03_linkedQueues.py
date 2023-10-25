@@ -5,7 +5,7 @@ class _Node:
         self._element = element
         self._next = next
     
-class QueueLinkedlist:
+class LinkedQueue:
 
     def __init__(self):
         self._front = None
