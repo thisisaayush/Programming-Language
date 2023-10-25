@@ -9,7 +9,7 @@ class DEQueArray:
         return len(self._data) == 0
     
     def addFirst(self, e):
-        self._data.inser(0, e)
+        self._data.insert(0, e)
 
     def addLast(self, e):
         self._data.append(e)
