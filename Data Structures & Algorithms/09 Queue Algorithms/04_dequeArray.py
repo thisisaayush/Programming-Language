@@ -14,7 +14,7 @@ class DEQueArray:
     def addLast(self, e):
         self._data.append(e)
 
-    def remoreFirst(self):
+    def removeFirst(self):
         if self.isEmpty():
             print("Queue is empty!")
             return 
@@ -22,13 +22,6 @@ class DEQueArray:
         return self._data.pop(0)
     
     def removeLast(self):
-        if self.isEmpty():
-            print("Queue is empty!")
-            return
-        
-        return self._data.pop()
-    
-    def removeFirst(self):
         if self.isEmpty():
             print("Queue is empty!")
             return
