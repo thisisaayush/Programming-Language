@@ -17,3 +17,9 @@
   c. Resource Allocation: Queues are used to allocate resources to processes, such as CPU scheduling in operating systems.
   d. Buffering: In data communication and I/O systems, queues are used to buffer and manage data as it is transferred between two systems or devices.
 '''
+
+'''
+ Note: dequeue - to remove element from the front of a Queue Data Structure,
+       whereas DeQue is a data structure that implements both features of Stack and Queue Data Structure, 
+       such as addFirst, addLast, removeFirst, removeLast.
+'''
