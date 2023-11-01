@@ -41,6 +41,15 @@ class BinaryTree:
                 return y + 1
         return 0
 
+    def countNodes(self, troot):
+        if troot:
+            x = self.countNodes(troot._left)
+            y = self.countNodes(troot._right)
+
+            return x + y + 1
+
+        return 0
+
 x = BinaryTree()
 y = BinaryTree()
 z = BinaryTree()
