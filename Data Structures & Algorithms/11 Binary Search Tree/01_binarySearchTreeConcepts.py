@@ -9,12 +9,11 @@ The key property of a Binary Search Tree is that for any given node:
     c. This property ensures that elements in the BST are ordered and can be efficiently searched.
 
 Key characteristics of a Binary Search Tree:
-
-Each node has a key (or value).
-Each node can have at most two children (left and right).
-The left subtree contains nodes with keys less than the parent node's key.
-The right subtree contains nodes with keys greater than the parent node's key.
-Inorder traversal of the tree yields elements in sorted order.
+    - Each node has a key (or value).
+    - Each node can have at most two children (left and right).
+    - The left subtree contains nodes with keys less than the parent node's key.
+    - The right subtree contains nodes with keys greater than the parent node's key.
+    - Inorder traversal of the tree yields elements in sorted order.
 
 Common operations on a Binary Search Tree:
     a. Insertion: Adding a new node with a given key to the tree while maintaining the BST property.
@@ -25,9 +24,20 @@ Common operations on a Binary Search Tree:
 
 
 Note:
-    BSTs are used in various applications, including database indexing, symbol tables, and in-memory data structures.
-    They offer fast search times but are sensitive to the order in which data is inserted. In the worst-case scenario
-    (when data is inserted in sorted or nearly sorted order), a BST may degenerate into a linked list, resulting in
-    inefficient search times. To address this, balanced binary search trees, such as AVL trees and Red-Black trees, are
-    used to maintain a balance, ensuring consistent O(log n) search and insertion times.
+    Here are some specific examples of applications that use binary search trees:
+    a. Database indexes: Databases use binary search trees to index their data. This makes it possible to quickly search
+       for data in the database.
+    b. Search engines: Search engines use binary search trees to index the web. This makes it possible to quickly search
+       for web pages that contain a particular keyword.
+    c. File systems: File systems use binary search trees to store the directories and files on a computer. This makes it
+       possible to quickly find and access files.
+    d. Operating systems: Operating systems use binary search trees to manage processes and threads. This helps to ensure
+       that processes and threads are scheduled and executed efficiently.
+    e. Compilers: Compilers use binary search trees to represent the symbol tables for the programs they are compiling.
+       This helps the compiler to quickly find and resolve symbols.
+
+They offer fast search times but are sensitive to the order in which data is inserted. In the worst-case scenario (when
+data is inserted in sorted or nearly sorted order), a BST may degenerate into a linked list, resulting in inefficient search
+times. To address this, balanced binary search trees, such as AVL trees and Red-Black trees, are used to maintain a balance,
+ensuring consistent O(log n) search and insertion times.
 '''
