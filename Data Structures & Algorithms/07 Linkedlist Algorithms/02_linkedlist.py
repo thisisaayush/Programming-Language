@@ -123,3 +123,13 @@ class Linkedlist:
             print(p._element, end=" ")
             p = p._next
         print()
+
+my_linked_list = Linkedlist()
+my_linked_list.addLast(1)
+my_linked_list.addLast(2)
+my_linked_list.addLast(3)
+my_linked_list.addLast(4)
+
+# Display the original linked list
+print("Original Linked List:")
+my_linked_list.display()

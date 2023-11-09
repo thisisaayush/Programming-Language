@@ -34,6 +34,21 @@ class BinarySearchTree:
         else:
             self._root = n
 
+    def search(self, e):
+        troot = self._root
+
+        while troot:
+            if e == troot._element:
+                return True
+
+            elif e < troot._element:
+                troot = troot._left
+
+            elif e > troot._element:
+                troot = troot._right
+
+        return False
+
     def inorder(self, troot):
         if troot:
             self.inorder(troot._left)
@@ -47,4 +62,7 @@ x.insert(x._root, 80)
 x.insert(x._root, 70)
 x.insert(x._root, 35)
 x.insert(x._root, 40)
+print("Inorder Traversal: ")
 x.inorder(x._root)
+print("\nSearch the value: ")
+print(x.search(70))
