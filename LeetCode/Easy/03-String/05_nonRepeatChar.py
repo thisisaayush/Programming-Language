@@ -4,7 +4,7 @@ class NonRepeatChar:
         charCount = {}
 
         for char in str1:
-            if char in charCount:
+            if char in charCount: #value char comparing to charCount Key
                 charCount[char] += 1
 
             else:
