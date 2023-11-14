@@ -2,6 +2,7 @@ class NonRepeatChar:
     @staticmethod
     def nonRepeatChar(str1):
         charCount = {}
+        str1 = "".join(str1.split()).lower()
 
         for char in str1:
             if char in charCount: #value char comparing to charCount Key

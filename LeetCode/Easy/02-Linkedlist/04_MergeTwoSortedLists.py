@@ -5,7 +5,7 @@ class ListNode:
 
 
 def mergeTwoLists(l1, l2):
-    dummy_head = ListNode(-1)
+    dummy_head = ListNode()
     current = dummy_head
 
     while l1 is not None and l2 is not None:
@@ -36,10 +36,12 @@ l1.next.next.next = ListNode(9)
 
 # Define nodes for the second linked list: 1 -> 3 -> 5
 l2 = ListNode(1)
-l2.next = ListNode(3)
-l2.next.next = ListNode(5)
+l2.next = ListNode(2)
+l2.next.next = ListNode(3)
+l2.next.next.next = ListNode(5)
+
 merged_list = mergeTwoLists(l1, l2)
 current = merged_list
-while current is not None:
-    print(current.val, end=" -> ")
-    current = current.next
+while merged_list is not None:
+    print(merged_list.val, end=" -> ")
+    merged_list = merged_list.next
