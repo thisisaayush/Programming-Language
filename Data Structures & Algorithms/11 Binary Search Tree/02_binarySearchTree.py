@@ -34,6 +34,48 @@ class BinarySearchTree:
         else:
             self._root = n
 
+    def delete(self, e):
+        p = self._root
+        pp = None
+
+        while p and p._element != e:
+            pp = p
+            if e < p._element:
+                p = p._left
+            else:
+                p = p._right
+
+            if not p:
+                return False
+
+            if p._left and p._right:
+                s = p._left
+                ps = p
+
+                while s._right:
+                    ps = s
+
+                p._element = s._element
+                p = s #confused
+                pp = ps #confused
+
+            c = None
+
+            if p._left:
+                c = p._left
+            else:
+                c = p._right
+
+            if p == self._root:
+                self._root = c
+
+            else:
+                if p == pp._left:
+                    pp._left = c
+                else:
+                    pp._right = c
+
+
     def search(self, e):
         troot = self._root
 
@@ -66,3 +108,6 @@ print("Inorder Traversal: ")
 x.inorder(x._root)
 print("\nSearch the value: ")
 print(x.search(70))
+print("\nDelete: 35")
+x.delete(35)
+x.inorder(x._root)
