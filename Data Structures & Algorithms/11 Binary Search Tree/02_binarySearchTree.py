@@ -47,7 +47,7 @@ class BinarySearchTree:
 
             if not p:
                 return False
-
+            #for findding the largest element from the left subtree of p.
             if p._left and p._right:
                 s = p._left
                 ps = p
@@ -74,7 +74,6 @@ class BinarySearchTree:
                     pp._left = c
                 else:
                     pp._right = c
-
 
     def search(self, e):
         troot = self._root

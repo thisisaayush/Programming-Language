@@ -60,13 +60,13 @@ class Heap:
 
         return self._data[1]
 
-heap = Heap()
-heap.insert(25)
-heap.insert(14)
-heap.insert(2)
-heap.insert(20)
-heap.insert(10)
-heap.insert(40)
-print(heap._data)
-print(heap.delete())
-print(heap._data)
+# heap = Heap()
+# heap.insert(25)
+# heap.insert(14)
+# heap.insert(2)
+# heap.insert(20)
+# heap.insert(10)
+# heap.insert(40)
+# print(heap._data)
+# print(heap.delete())
+# print(heap._data)
