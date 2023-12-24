@@ -20,6 +20,6 @@ class PalindromeCheck:
         return True
 
 test = PalindromeCheck()
-print(test.checkPalindrome1("m a da m"))
+print(test.checkPalindrome1("m ,a da m"))
 print(test.checkPalindrome1("m a d a m"))
 

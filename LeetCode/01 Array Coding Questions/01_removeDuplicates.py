@@ -7,3 +7,8 @@ def removeDuplicates(nums):
             nums[i] = nums [j]
             
     return i + 1
+
+nums = [1, 1, 2, 2, 3, 4, 4, 5]
+result_length = removeDuplicates(nums)
+print(result_length)
+print(nums[:result_length])

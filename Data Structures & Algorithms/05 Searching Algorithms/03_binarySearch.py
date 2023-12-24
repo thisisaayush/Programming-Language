@@ -1,4 +1,4 @@
-def binarySearch(A, n, key): # A is a sorted array, n is length of an array, and key is the value to be searched.
+def binarySearch(A, key): # A is a sorted array, n is length of an array, and key is the value to be searched.
     left = 0
     right = len(A) - 1
 
