@@ -3,7 +3,7 @@ def groupAnagram(strs):
     
     for word in strs:
         sortedStr = ''.join(sorted(word))
-        if sortedStr in dictStr:
+        if sortedStr in dictStr: #sortedStr is a keyword.
             dictStr[sortedStr].append(word)
         
         else:

@@ -1,3 +1,4 @@
+# array element works as dictionary key and index as its value.
 def twoSum(nums, target):
     dictNum = {}
     
