@@ -7,10 +7,10 @@ def consecutiveSequence(nums):
             currentNum = num
             currentLength = 1
             
-        while currentNum + 1 in numSet:
-            currentNum +=1 
-            currentLength += 1
-            
+            while currentNum + 1 in numSet:
+                currentNum +=1 
+                currentLength += 1
+                
         maxLength = max(currentLength, maxLength)
     
     return maxLength
