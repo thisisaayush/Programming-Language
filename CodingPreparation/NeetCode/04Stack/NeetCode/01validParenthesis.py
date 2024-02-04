@@ -1,0 +1,15 @@
+def validParenthesis(strs):
+    stack = []
+    closeToOpen = {")" : "(", "}" : "{", "]" : "["}
+    
+    
+    for c in strs:
+        if c in closeToOpen: #checks key
+            if stack and stack[-1] == closeToOpen[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+        
+    return True if not stack else False
