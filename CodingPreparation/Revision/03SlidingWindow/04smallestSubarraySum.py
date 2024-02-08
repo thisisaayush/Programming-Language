@@ -1,0 +1,2 @@
+def smallestSubarraySum(nums, s):
+    
