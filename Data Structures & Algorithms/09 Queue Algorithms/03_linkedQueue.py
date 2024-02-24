@@ -23,6 +23,7 @@ class LinkedQueue:
 
         if self.isEmpty():
             self._front = new_element
+            self._rear = new_element
         
         else:
             self._rear._next = new_element
